@@ -1,14 +1,14 @@
-# ps-projects-audition
+# Pluralsight Projects Audition
 Pluralsight Projects Audition
 
 ## Purpose of the project
-This project will provide you a step-by-step guide to create a Python program to extract the last integer of each line in a text file.
+This project will provide you a step-by-step guide to create a Python script that is able to read fields from a PDF forms document.
 
 ## Verify locally
 To test this module locally:
-* Open up a terminal at the project root
-* Run command `pytest -k module1`
-
+* Open up a terminal at the project root folder
+* You must use Python 3.6.X or above
+* Run command `python forms.py`
 
 ## Task 1: Open the `input.txt` file as `infile`
 A sample input file named `input.txt` is provided as part of the project.
