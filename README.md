@@ -1,5 +1,5 @@
-# Pluralsight Projects Audition
-Pluralsight Projects Audition
+# Pluralsight Project Audition
+Pluralsight Project Audition sample for [Eduardo Freitas](https://edfreitas.me)
 
 ## Purpose of the project
 This project will provide you a step-by-step guide to create a Python script that is able to read fields from a PDF forms document.
