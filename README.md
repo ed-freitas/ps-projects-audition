@@ -106,7 +106,7 @@ This is what the `readfields` function returns.
 So, by calling the `readfields` function we can read the PDF form fields of any particular PDF that contains a form, which follows the [AcroForm](https://www.smartdoctech.com/pdf/FormsAPIReference.pdf) specification.
 
 ## Task 8: Wrapping up the `readfields` function
-With the `readfields` ready, need to first open the PDF file and read its content—which we can do with the following code.
+With the `readfields` ready, we need to first open the PDF file and read its content—which we can do with the following code.
 
 ```
 def getfields(infile):
@@ -149,10 +149,10 @@ if __name__ == '__main__':
     run(sys.argv)
 ```
 
-Where `sys.argv` represents the name of the parameter (PDF form document: `opportunity.pdf`) passed to forms.py when running the script from the terminal:
+Where `sys.argv` represents the name of the parameter (PDF form document: `opportunity.pdf`) passed to `forms.py` when running the script from the terminal:
 
 `python forms.py opportunity.pdf`
 
-Save all the changes done to the `forms.py` file.
+To finalize, save all the changes done to the `forms.py` file.
 
 You are now ready to execute the `forms.py` Python script.
