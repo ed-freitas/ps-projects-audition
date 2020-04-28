@@ -8,7 +8,11 @@ This project will provide you a step-by-step guide to create a Python script tha
 To test this script locally:
 * Open up a terminal session at the project root folder
 * You must use Python 3.6.X or above
-* Run command `python forms.py`
+* Run command `python forms.py opportunity.pdf`
+
+The sample PDF form document provided for this demo is called `opportunity.pdf`.
+
+The Python script that you will create will be called: `forms.py`.
 
 ## Task 1: Install the `PyPDF2` library
 The PDF file format is a versatile document format. It is one of the world’s most used file formats along with Microsoft Excel and Word. 
@@ -23,7 +27,13 @@ To be able to read PDF form documents, we need to install the `PyPDF2` library, 
 pip install PyPDF2
 ```
 
-With some Python 3.X installations, `pip3` can also be used instead of `pip`. Both do the same job. Once the library has been installed, we can start writing our script.
+With some Python 3.X installations, `pip3` can also be used instead of `pip`. 
+
+```
+pip3 install PyPDF2
+```
+
+Both do the same job. Once the library has been installed, we can start writing our script.
 
 ## Task 2: Import the required modules
 Let’s start by importing the modules and libraries that our script will require, which we can see in the listing below.
@@ -37,7 +47,6 @@ from collections import OrderedDict
 ```
 
 We will be using an ordered dictionary `OrderedDict`, to return the list of fields read from a PDF form document. We can read any fields within a PDF form document, by using the `readfields` function.
-
 
 ## Task 3: Read field attributes
 In order to read a PDF form, we start by specifying the [AcroForm](https://www.smartdoctech.com/pdf/FormsAPIReference.pdf) (Adobe Acrobat Form) field attributes that are used within PDF form documents.
@@ -115,3 +124,35 @@ Those fields are then returned in a new ordered dictionary, as key-value pairs, 
 ```
 OrderedDict([('Field1', '0001'), ('Field2', '0002'), ('Field3', '0003')])
 ```
+
+## Task 9: Calling the `getfields` function
+The `getfields` function can be invoked from a `run` function as follows.
+
+```
+def run(args):
+    try: 
+        if len(args) == 2:
+            pdf_file_name = args[1]
+            items = getfields(pdf_file_name)
+            print(items)
+    except BaseException as msg:
+        print('An error occured... :( ' + str(msg))
+```
+
+Notice that the name of the PDF form document to extract the fields from (in our case `opportunity.pdf`) is represented by `args[1]`.
+
+## Task 10: Invoking the script
+The `run` function and thus the script can be invoked as follows.
+
+```
+if __name__ == '__main__':
+    run(sys.argv)
+```
+
+Where `sys.argv` represents the name of the parameter (PDF form document: `opportunity.pdf`) passed to forms.py when running the script from the terminal:
+
+`python forms.py opportunity.pdf`
+
+Save all the changes done to the `forms.py` file.
+
+You are now ready to execute the `forms.py` Python script.
