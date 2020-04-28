@@ -101,9 +101,9 @@ return res
 
 This is what the `readfields` function returns.
 
-## Task 7: Wrapping up the `readfields` function 
-
 So, by calling the `readfields` function we can read the PDF form fields of any particular PDF that contains a form, which follows the [AcroForm](https://www.smartdoctech.com/pdf/FormsAPIReference.pdf) specification.
+
+## Task 7: The `getfields` function 
 
 With the `readfields` ready, we need to first open the PDF file and read its content—which we can do with the following code.
 
