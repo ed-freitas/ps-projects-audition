@@ -1,32 +1,29 @@
 # Pluralsight Project Audition
 Pluralsight Project Audition Sample for [Eduardo Freitas](https://edfreitas.me)
 
-## Purpose of the project
-This project will provide you a step-by-step guide to create a Python script that is able to read fields from a PDF form document.
-
 ## Description of the project
 This project will provide you a step-by-step guide to create a Python script that is able to read fields from a PDF form document.
 
 ## Verify locally
 To test this script locally:
-* Open up a terminal at the project root folder
+* Open up a terminal session at the project root folder
 * You must use Python 3.6.X or above
 * Run command `python forms.py`
 
 ## Task 1: Install the `PyPDF2` library
 The PDF file format is a versatile document format. It is one of the world’s most used file formats along with Microsoft Excel and Word. 
 
-The PDF file format is versatile, because it supports various types of content, such as scanned documents, standard text printed content and also content with fields.
+The PDF file format is versatile, because it supports various types of content, such as scanned documents, standard text printed content and also form content with fields.
 
-In this case, we will focus on how to read PDF forms, which corresponds to content with fields that are part of a PDF file.
+In this case, we will focus on how to read PDF forms, which corresponds to content with fields that are part of a PDF form file.
 
-To be able to read PDF form documents, we need to install the PyPDF2 library, which can be installed from the command prompt or built-in terminal within VS Code, using the following command.
+To be able to read PDF form documents, we need to install the `PyPDF2` library, which can be installed from the command prompt or built-in terminal within [Visual Studio Code](https://code.visualstudio.com/), using the following command.
 
 ```
 pip install PyPDF2
 ```
 
-With some Python 3.X installations, pip3 can also be used instead of pip. Both do the same job. Once the library has been installed, we can start writing our script.
+With some Python 3.X installations, `pip3` can also be used instead of `pip`. Both do the same job. Once the library has been installed, we can start writing our script.
 
 ## Task 2: Import the required modules
 Let’s start by importing the modules and libraries that our script will require, which we can see in the listing below.
@@ -87,7 +84,7 @@ if "/Fields" in t:
 ```
 
 ## Task 6: Return the fields on the form
-The fields that are identified as PDF form fields are returned in an ordered dictionary, which contains each field with its respective value, as a set of key-value pairs. 
+The fields that are identified as PDF form fields are returned in an ordered dictionary `res`, which contains each field with its respective value, as a set of key-value pairs. 
 
 ```
 return res
@@ -97,10 +94,10 @@ This is what the `readfields` function returns.
 
 ## Task 7: Wrapping up the `readfields` function 
 
-So, by calling the readfields function we can read the PDF form fields of any particular PDF that contains a form, which follows the [AcroForm](https://www.smartdoctech.com/pdf/FormsAPIReference.pdf) specification.
+So, by calling the `readfields` function we can read the PDF form fields of any particular PDF that contains a form, which follows the [AcroForm](https://www.smartdoctech.com/pdf/FormsAPIReference.pdf) specification.
 
 ## Task 8: Wrapping up the `readfields` function
-With the `readfields` ready need to first open the PDF file and read its content—which we can do with the following code.
+With the `readfields` ready, need to first open the PDF file and read its content—which we can do with the following code.
 
 ```
 def getfields(infile):
