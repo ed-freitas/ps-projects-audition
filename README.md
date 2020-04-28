@@ -105,7 +105,6 @@ This is what the `readfields` function returns.
 
 So, by calling the `readfields` function we can read the PDF form fields of any particular PDF that contains a form, which follows the [AcroForm](https://www.smartdoctech.com/pdf/FormsAPIReference.pdf) specification.
 
-## Task 8: Wrapping up the `readfields` function
 With the `readfields` ready, we need to first open the PDF file and read its content—which we can do with the following code.
 
 ```
@@ -125,7 +124,7 @@ Those fields are then returned in a new ordered dictionary, as key-value pairs, 
 OrderedDict([('Field1', '0001'), ('Field2', '0002'), ('Field3', '0003')])
 ```
 
-## Task 9: Calling the `getfields` function
+## Task 8: Calling the `getfields` function
 The `getfields` function can be invoked from a `run` function as follows.
 
 ```
@@ -141,7 +140,7 @@ def run(args):
 
 Notice that the name of the PDF form document to extract the fields from (in our case `opportunity.pdf`) is represented by `args[1]`.
 
-## Task 10: Invoking the script
+## Task 9: Invoking the script
 The `run` function and thus the script can be invoked as follows.
 
 ```
