@@ -1,0 +1,25 @@
+import os
+import sys
+
+import PyPDF2
+from collections import OrderedDict
+
+def readfields(obj, t=None, res=None, fo=None):
+    fa = {'/FT': 'Field Type', 
+    '/Parent': 'Parent', 
+    '/T': 'Field Name', 
+    '/TU': 'Alternate Field Name',
+    '/TM': 'Mapping Name', 
+    '/Ff': 'Field Flags', 
+    '/V': 'Value', 
+    '/DV': 'Default Value'}
+
+    if res is None:
+        res = OrderedDict()
+        items = obj.trailer["/Root"]
+        if "/AcroForm" in items:
+            t = items["/AcroForm"]
+        else:
+            return None
+    if t is None:
+        return res
