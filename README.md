@@ -60,7 +60,7 @@ python test.py t1_2.py
 
 If tasks 1 and 2 have been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t1_2.py`.
 
-If tasks 1 and 2 have not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t1_2.py`.
+If tasks 1 and 2 have not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t1_2.py`.
 
 ```
 Error: t1_2.py does not contain the expected input. Please check t1_2.txt
@@ -102,7 +102,7 @@ python test.py t3.py
 
 If task 3 has been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t3.py`.
 
-If task 3 has not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t3.py`.
+If task 3 has not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t3.py`.
 
 ```
 Error: t3.py does not contain the expected input. Please check t3.txt
@@ -137,7 +137,7 @@ python test.py t4.py
 
 If task 4 has been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t4.py`.
 
-If task 4 has not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t4.py`.
+If task 4 has not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t4.py`.
 
 ```
 Error: t4.py does not contain the expected input. Please check t4.txt
@@ -172,7 +172,7 @@ python test.py t5.py
 
 If task 5 has been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t5.py`.
 
-If task 5 has not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t5.py`.
+If task 5 has not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t5.py`.
 
 ```
 Error: t5.py does not contain the expected input. Please check t5.txt
@@ -201,7 +201,7 @@ python test.py t6.py
 
 If task 6 has been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t6.py`.
 
-If task 6 has not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t6.py`.
+If task 6 has not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t6.py`.
 
 ```
 Error: t6.py does not contain the expected input. Please check t6.txt
@@ -240,7 +240,7 @@ python test.py t7.py
 
 If task 7 has been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t7.py`.
 
-If task 7 has not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t7.py`.
+If task 7 has not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t7.py`.
 
 ```
 Error: t7.py does not contain the expected input. Please check t7.txt
@@ -274,7 +274,7 @@ python test.py t8.py
 
 If task 8 has been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t8.py`.
 
-If task 8 has not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t8.py`.
+If task 8 has not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t8.py`.
 
 ```
 Error: t8.py does not contain the expected input. Please check t8.txt
@@ -308,7 +308,7 @@ python test.py t9.py
 
 If task 9 has been completed successfully, nothing will be returned through the terminal prompt when executing `python test.py t9.py`.
 
-If task 9 has not been completeded successfully, the following error will be returned through the terminal prompt when executing `python test.py t9.py`.
+If task 9 has not been completed successfully, the following error will be returned through the terminal prompt when executing `python test.py t9.py`.
 
 ```
 Error: t9.py does not contain the expected input. Please check t9.txt
