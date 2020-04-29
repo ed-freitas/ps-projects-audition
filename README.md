@@ -12,7 +12,7 @@ To test this script locally:
 
 The sample PDF form document provided for this demo is called `opportunity.pdf`.
 
-The Python script that you will create will be called: `forms.py`.
+The Python script that you will create will be called: `forms.py` (a working copy has been added to this repo).
 
 ## Task 1: Install the `PyPDF2` library
 The PDF file format is a versatile document format. It is one of the world’s most used file formats along with Microsoft Excel and Word. 
