@@ -4,15 +4,15 @@ Pluralsight Project Audition Sample for [Eduardo Freitas](https://edfreitas.me)
 ## Description of the project
 This project will provide you a step-by-step guide to create a Python script that is able to read fields from a PDF form document.
 
+The Python script that you will create will be called: `forms.py` (a working copy has been added to this repo: `forms-ready.py`).
+
 ## Verify locally
 To test this script locally:
-* Open up a terminal session at the project root folder
-* You must use Python 3.6.X or above
-* Run command `python forms.py opportunity.pdf`
+* Open up a terminal session at the project root folder.
+* You must use Python 3.6.X or above.
+* Run command `python forms.py opportunity.pdf`.
 
 The sample PDF form document provided for this demo is called `opportunity.pdf`.
-
-The Python script that you will create will be called: `forms.py` (a working copy has been added to this repo).
 
 ## Task 1: Install the `PyPDF2` library
 The PDF file format is a versatile document format. It is one of the world’s most used file formats along with Microsoft Excel and Word. 
@@ -33,7 +33,7 @@ With some Python 3.X installations, `pip3` can also be used instead of `pip`.
 pip3 install PyPDF2
 ```
 
-Both do the same job. Once the library has been installed, we can start writing our script.
+Both do the same job. Once the library has been installed, we can start.
 
 ## Task 2: Import the required modules
 Let’s start by importing the modules and libraries that our script will require, which we can see in the listing below.
@@ -48,7 +48,7 @@ from collections import OrderedDict
 
 We will be using an ordered dictionary `OrderedDict`, to return the list of fields read from a PDF form document. We can read any fields within a PDF form document, by using the `readfields` function.
 
-Submit tasks 1 and 2 by creating a `t1_2.py` file within your project folder, with the steps described in this task.
+Submit tasks 1 and 2 by creating a `t1_2.py` file within your project folder, with the step described in this task.
 
 ### Testing Tasks 1 and 2:
 
@@ -90,7 +90,7 @@ def readfields(obj, t=None, res=None, fo=None):
 
 Please add a blank line first (by pressing enter), before you add the code snippets above. Make sure proper identation is used.
 
-Please also submit along the code from the previous task (contained within the `t1_2.py` file), along with the details of this task, into a new file called `t3.py`.
+Please also submit along the code from the previous task (contained within the `t1_2.py` file), along with the details of this task. Create a new file called `t3.py`.
 
 ### Testing Task 3:
 
@@ -125,7 +125,7 @@ if t is None:
 
 This code needs to be added to the `readfields` function (at the end of the function). Please add a blank line first (by pressing enter), before you add the code snippet above. Make sure proper identation is used.
 
-You can continue where you left off on task 3, and create a file called `t4.py` which should contain the code of the previous tasks, plus this one.
+You can continue where you left off on task 3. Create a file called `t4.py` which should contain the code of the previous tasks, plus this one.
 
 ### Testing Task 4:
 
@@ -314,4 +314,19 @@ If task 9 has not been completed successfully, the following error will be retur
 Error: t9.py does not contain the expected input. Please check t9.txt
 ```
 
-The end result of this exercise should be that the code contained within `t9.py` should be identical to the code within `forms.py`.
+The end result of this exercise should be that the code contained within `t9.py` should be identical to the code within `forms-ready.py`.
+
+## Testing the finished script:
+
+If you have successfully tested all the tasks the `t9.py` file will contain all the code required. Copy the contents of `t9.py` to `forms.py` and then execute the following command:
+
+```
+python forms.py opportunity.pdf
+```
+
+You should see the following result:
+
+```
+OrderedDict([('opp5', 'New Customer'), ('opp4', 'Cool Customer '), ('opp9', '4/17/2020'), ('opp3', 'Test Opportunity'), ('opp11', 
+'Prospecting'), ('opp6', 'Phone Inquiry')])
+```
