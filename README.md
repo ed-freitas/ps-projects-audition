@@ -1,5 +1,5 @@
 # Pluralsight Project Audition
-Pluralsight Project Audition Sample for [Eduardo Freitas](https://edfreitas.me)
+Pluralsight Project Audition Sample for Ed Freitas
 
 ## Description of the project
 This project will provide you a step-by-step guide to create a Python script that is able to read fields from a PDF form document.
